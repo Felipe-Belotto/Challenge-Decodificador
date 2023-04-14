@@ -10,6 +10,8 @@
 
     --fundo-botaoCriptografar: #0a3871;
     --fundo-botaoDescriptografar: #d8dfe8 ;
+
+    --cor-resposta:#495057;
 }
 
 body{
@@ -56,7 +58,9 @@ main {
     font-weight: 400;
     line-height: 150%;
     color: var(--texto-input);
+    max-width: 100%;
 }
+
 
 .layout-botoes{
     height: 100px;
@@ -105,38 +109,65 @@ main {
     align-items: center;
 }
 
-.box-resposta{
+.box-resposta {
     width: 400px;
     height: 92%;
     border-radius: 32px;
-    background-color: var(--fundo-resposta) ;
+    background-color: var(--fundo-resposta);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+    padding: 32px 32px 0 32px;
 }
 
-#resposta{
-    width: 300px;
-    text-align: center;
-    flex-wrap: nowrap;
-    font-size: 24px;
+
+#respostaSemTexto{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .imagem-SemTexto{
-    margin: 0 0 32px 0;
+    padding: 243px 0 0 0;
 }
 
 .mensagem-semTexto{
+    text-align: center;
     font-weight: bold;
+    width: 300px;
+    line-height: 120%;
 }
 
 .mensagem-semTexto-legenda{
+    text-align: center;
+    width: 300px;
     font-size: 16px;
+    line-height: 150%;
 }
 
-#botao-copiar{
+.box-textoResposta{
+   display: none;
+}
+
+.textoResposta{
+    width: 400px;
+    height: 82vh;
+    font-size: 24px;
+    border: none;
+    outline: 0;
+    resize: none;
+    display: flex;
+    justify-content: start;
+    box-sizing: border-box;
+    pointer-events: none;
+    color: var(--cor-resposta);
+}
+
+.box-botaoCopiar{
+  align-self: center;
+}
+
+.hide{
     display: none;
-    height: 68px;
 }
