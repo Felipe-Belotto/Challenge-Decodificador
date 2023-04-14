@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');</style>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <main>
+        <div class="box-logoAlura">
+            <img src="assets/img/logoAlura.png" alt="Logo Alura" class="logoAlura">
+
+        </div>
+        
+
+        <div class="layout-preencher">
+            <textarea name="TextoCodificador" id="input-texto">Digite seu texto</textarea>
+
+            <div class="layout-botoes">
+                <p class="informativo-input"><img src="assets/img/iconeExclamacao.png" alt="icone de exclamação">Apenas letras minúsculas e sem acento.</p>
+                <div class="box-botoes">
+                <button id="botao-criptografar" class="botao" >Criptografar</button>
+                <button id="botao-descriptografar" class="botao">Descriptografar</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="layout-resposta">
+            <div class="box-resposta">
+             <div id="resposta">
+                <div id="respostaSemTexto">
+                <img src="assets/img/imgResposta.png" alt="ilustração para a caixa de resposta" class="imagem-SemTexto">
+                <p class="mensagem-semTexto">Nenhuma mensagem encontrada</p> <br>
+                <p class="mensagem-semTexto-legenda">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+
+        <button class="botao" id="botao-copiar">Copiar</button>
+
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+:root{
+    --fundo-body:#F3F5FC ;
+    --fundo-resposta: #FFFFFF;
+   
+    --texto-input: #0A3871;
+    --texto-botaoCriptografar: #fff ;
+    --texto-botaoDescriptografar: #0a3871;
+
+    --borda-botao: #0a3871 ;
+
+    --fundo-botaoCriptografar: #0a3871;
+    --fundo-botaoDescriptografar: #d8dfe8 ;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.box-logoAlura{
+    margin: 40px 0 0 0;
+}
+
+.logoAlura{
+    height: 48px;
+    left: 100px;
+    top: 40px;
+}
+
+
+main {
+    width: 1440px;
+    height: 100vh;     
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--fundo-body) ;
+}
+
+.layout-preencher{
+    width: 50%;
+    margin: 40px 0 0 0;
+}
+
+#input-texto{
+    width: 100%;
+    height: 600px;
+    margin: 80px 0 0 0;
+    background: none;
+    border: none;
+    outline: 0;
+    resize:none;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--texto-input);
+}
+
+.layout-botoes{
+    height: 100px;
+    margin: 75px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.informativo-input{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    gap: 8px;
+    margin: 0 0 10px 18px;
+}
+
+.box-botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.botao{
+    width: 328px;
+    height: 68px;
+    border-radius: 24px;
+    border: 1px var(--borda-botao) solid;
+    cursor: pointer;
+}
+
+#botao-criptografar{
+    background-color: var(--fundo-botaoCriptografar);
+    color: var(--texto-botaoCriptografar) ;
+}
+
+#botao-descriptografar{
+   background-color: var(--fundo-botaoDescriptografar);
+   color: var(--texto-botaoDescriptografar);
+}
+
+.layout-resposta{
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.box-resposta{
+    width: 400px;
+    height: 92%;
+    border-radius: 32px;
+    background-color: var(--fundo-resposta) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#resposta{
+    width: 300px;
+    text-align: center;
+    flex-wrap: nowrap;
+    font-size: 24px;
+}
+
+.imagem-SemTexto{
+    margin: 0 0 32px 0;
+}
+
+.mensagem-semTexto{
+    font-weight: bold;
+}
+
+.mensagem-semTexto-legenda{
+    font-size: 16px;
+}
+
+#botao-copiar{
+    display: none;
+    height: 68px;
+}
