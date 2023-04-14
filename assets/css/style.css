@@ -9,9 +9,12 @@
     --borda-botao: #0a3871 ;
 
     --fundo-botaoCriptografar: #0a3871;
-    --fundo-botaoDescriptografar: #d8dfe8 ;
+    --fundo-botaoDescriptografar: #F3F5FCa ;
 
     --cor-resposta:#495057;
+}
+*{
+    background-color: var(--fundo-body);
 }
 
 body{
@@ -126,10 +129,12 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: var(--fundo-resposta);
 }
 
 .imagem-SemTexto{
     padding: 243px 0 0 0;
+    background-color: var(--fundo-resposta);
 }
 
 .mensagem-semTexto{
@@ -137,6 +142,7 @@ main {
     font-weight: bold;
     width: 300px;
     line-height: 120%;
+    background-color: var(--fundo-resposta);
 }
 
 .mensagem-semTexto-legenda{
@@ -144,6 +150,7 @@ main {
     width: 300px;
     font-size: 16px;
     line-height: 150%;
+    background-color: var(--fundo-resposta);
 }
 
 .box-textoResposta{
@@ -162,10 +169,18 @@ main {
     box-sizing: border-box;
     pointer-events: none;
     color: var(--cor-resposta);
+    background-color: var(--fundo-resposta);
 }
 
 .box-botaoCopiar{
   align-self: center;
+  background-color: var(--fundo-resposta);
+}
+
+#botao-copiar{
+    background-color: var(--fundo-resposta);  
+    border-color: #0A3871;
+    color: #0A3871;
 }
 
 .hide{
