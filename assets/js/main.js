@@ -4,6 +4,7 @@ let hide = (referencia) => {referencia.style.display="none";}
 const botaoCriptografar = document.getElementById("botao-criptografar")
 const botaoDescriptografar = document.getElementById("botao-descriptografar")
 const botaoCopiar = document.getElementById("botao-copiar")
+let copiar = (valor) => {botaoCopiar.addEventListener("click", () => {navigator.clipboard.writeText(valor)})}
 
 const inputTexto = document.getElementById ("input-texto")
 
@@ -46,6 +47,7 @@ function codificaLetras () {
 
     textoResposta.innerText = textoInput
     boxTextoResposta.style.display="flex";
+    botaoCopiar.addEventListener("click", copiar(textoInput))
 }
 
 function descodificaLetras(){
@@ -60,6 +62,10 @@ function descodificaLetras(){
     }
 
     textoResposta.innerText = textoInput;
-    boxTextoResposta.style.display="flex";
+    boxTextoResposta.style.display="flex"; 
+    botaoCopiar.addEventListener("click", copiar(textoInput)) 
 }
+
+
+
 
