@@ -29,6 +29,8 @@ function criptografar (){
 
 function descriptografar(){
     hide(respostaSemTexto)
+    botaoCopiar.classList.remove("hide");
+    descodificaLetras()
 }
 
 function codificaLetras () {
@@ -43,6 +45,21 @@ function codificaLetras () {
     }
 
     textoResposta.innerText = textoInput
+    boxTextoResposta.style.display="flex";
+}
+
+function descodificaLetras(){
+    let textoInput = inputTexto.value
+    
+    if (/[aeiou]/.test(textoInput)){
+        textoInput = textoInput.replace(/ai/g, "a");
+        textoInput = textoInput.replace(/enter/g, "e");
+        textoInput = textoInput.replace(/imes/g, "i");
+        textoInput = textoInput.replace(/ober/g, "o");
+        textoInput = textoInput.replace(/ufat/g, "u");
+    }
+
+    textoResposta.innerText = textoInput;
     boxTextoResposta.style.display="flex";
 }
 
