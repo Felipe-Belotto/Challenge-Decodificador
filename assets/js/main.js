@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     inputTexto.addEventListener("click", () => {
     if(inputTexto.value == "Digite seu texto"){
-        inputTexto.value ="";
+        inputTexto.value =""; 
     }
     else {inputTexto.value = inputTexto.value}
 })
