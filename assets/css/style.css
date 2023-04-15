@@ -113,21 +113,24 @@ main {
 }
 
 .box-resposta {
-    width: 400px;
+    width: 432px;
     height: 92%;
     border-radius: 32px;
     background-color: var(--fundo-resposta);
     display: flex;
     flex-direction: column;
-    padding: 32px 32px 0 32px;
+    align-items: center;
+    padding: 1em 0 0 0;
 }
 
 
 #respostaSemTexto{
     width: 400px;
+    margin: 50px 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    align-self: center;
     flex-direction: column;
     background-color: var(--fundo-resposta);
 }
@@ -153,16 +156,18 @@ main {
     background-color: var(--fundo-resposta);
 }
 
-.box-textoResposta{
+#box-textoResposta{
    display: none;
+   width: 400px;
+   height: 82vh;
 }
 
 .textoResposta{
-    width: 400px;
-    height: 82vh;
+    width: 100%;
+    height: 100%;
     font-size: 24px;
-    border: none;
     outline: 0;
+    border: none;
     resize: none;
     display: flex;
     justify-content: start;
