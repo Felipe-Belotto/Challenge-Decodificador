@@ -38,7 +38,7 @@ body{
 
 
 main {
-    width: 90em;
+    width: 100%;
     height: 100vh;     
     display: flex;
     justify-content: space-evenly;
@@ -114,7 +114,7 @@ main {
 }
 
 .box-resposta {
-    width: 50em;
+    width: 25em;
     height: 55em;
     border-radius: 2.25em;
     background-color: var(--fundo-resposta);
