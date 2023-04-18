@@ -125,7 +125,7 @@ main {
 
 
 #respostaSemTexto{
-    background-color: var(--fundo-resposta);
+    background: none;
     padding: 1em;
 }
 
