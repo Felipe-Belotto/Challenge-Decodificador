@@ -26,7 +26,7 @@
   
     const copiar = (valor) => {
       botaoCopiar.addEventListener("click", () => {navigator.clipboard.writeText(valor)});
-      
+      window.scroll(0, document.documentElement.scrollHeight)
     };
 
     inputTexto.addEventListener("click", () => {

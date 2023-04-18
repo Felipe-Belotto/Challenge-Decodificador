@@ -15,6 +15,10 @@
 
     --cor-resposta:#495057;
 }
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     background-color: var(--fundo-body);
 }
@@ -39,15 +43,22 @@ body{
 
 
 main {   
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.comeco-tela{
+.primeira-tela{
     width: 100%;
     height: 100vh;
+}
+
+.segunda-tela{
+    width: 100%;
+    height: 100vh;
+    display: flex;
 }
 
 .layout-preencher{
@@ -60,7 +71,7 @@ main {
 }
 
 #input-texto{
-   width: 87%;
+   width: 85%;
    height: 100%;
    outline: 0;
    resize: none;
@@ -127,7 +138,7 @@ main {
 }
 
 .box-resposta {
-  width: 80%;
+  width: 85%;
   background-color: var(--fundo-resposta);
   display: flex;
   justify-content: center;
@@ -140,7 +151,7 @@ main {
 
 #respostaSemTexto{
     background: none;
-    padding: 1em;
+    padding: 1.5em 1em;
 }
 
 .imagem-SemTexto{
@@ -194,7 +205,11 @@ main {
     display: none;
 }
 
-/* @media screen and (max-width:) {
+@media screen and (min-width: 768px) {
     
+    .box-botoes{
+        flex-direction: row;
+    }
+
 }
-   */
+  
