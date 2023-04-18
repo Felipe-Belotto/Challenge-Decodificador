@@ -224,6 +224,10 @@ footer{
     padding: 0 0 0 5px;
 }
 
+.img-footer:active{
+    transform: scale(0.95);
+}
+
 .hide{
     display: none;
 }
