@@ -27,7 +27,7 @@
     const copiar = (valor) => {
       botaoCopiar.addEventListener("click", () => {
         navigator.clipboard.writeText(valor)
-        window.scrollTo(0, 0)
+        window.scroll({ top: 0, behavior: 'smooth' });
         setTimeout(() => {
           location.reload()
         }, 500);
