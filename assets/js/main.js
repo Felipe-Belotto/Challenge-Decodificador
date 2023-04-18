@@ -25,7 +25,13 @@
     };
   
     const copiar = (valor) => {
-      botaoCopiar.addEventListener("click", () => {navigator.clipboard.writeText(valor)});
+      botaoCopiar.addEventListener("click", () => {
+        navigator.clipboard.writeText(valor)
+        window.scrollTo(0, 0)
+        setTimeout(() => {
+          location.reload()
+        }, 500);
+      });
     };
 
     inputTexto.addEventListener("click", () => {
