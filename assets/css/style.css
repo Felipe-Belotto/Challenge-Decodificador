@@ -18,176 +18,156 @@
 }
 
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
+    width: 100vw;
+    height: 100%;
     font-family: 'Inter', sans-serif;
+    display: flex;
+    background-color: var(--fundo-body);
 }
 
 .box-logoAlura{
-    margin: 2.5em 0 0 0;
-    display: none;
+   width: 100%;
+   margin: 0 0 10vh 0;
 }
 
 .logoAlura{
-    position: absolute;
-    height: 3em;
-    left: 17em;
-    top: 2.5em;
+    width: 32px;
+   padding: 16px 0 0 16px;
 }
 
 
 main {
-    width: 100%;
-    height: 100vh;     
+    
     display: flex;
-    justify-content: space-evenly;
-    background-color: var(--fundo-body) ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .layout-preencher{
-    width: 50%;
-    margin: 40px 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 #input-texto{
-    width: 100%;
-    height: 600px;
-    margin: 80px 0 0 0;
-    background: none;
-    border: none;
-    outline: 0;
-    resize:none;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 150%;
-    color: var(--texto-input);
-    max-width: 100%;
+   width: 90%;
+   height: 20rem;
+   outline: 0;
+   resize: none;
+   border: none;
+   background-color: var(--fundo-body);
+   color: var(--texto-input);
+   font-size: 32px;
 }
 
 
 .layout-botoes{
-    height: 100px;
-    margin: 75px 0 0 0;
     display: flex;
     flex-direction: column;
+    gap: 10px;
+}
+
+.box-informativo{
+    display: flex;
+    gap: 5px;
 }
 
 .informativo-input{
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    gap: 8px;
-    margin: 0 0 5px 0;
+   font-size: 12px;
+   display: flex;
+   align-items: center;
 }
 
 .box-botoes{
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 1.5em;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .botao{
-    width: 22em;
-    height: 4.5em;
+    width: 340px;
+    height: 60px;
     border-radius: 24px;
-    border: 1px var(--borda-botao) solid;
-    cursor: pointer;
 }
 
 #botao-criptografar{
     background-color: var(--fundo-botaoCriptografar);
-    color: var(--texto-botaoCriptografar) ;
+    color: var(--texto-botaoCriptografar);
 }
 
 #botao-descriptografar{
-   background-color: var(--fundo-botaoDescriptografar);
-   color: var(--texto-botaoDescriptografar);
+  
 }
 
 .layout-resposta{
-    width: 30%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center  ;
+   padding: 3rem 0;
 }
 
 .box-resposta {
-    width: 25em;
-    height: 55em;
-    border-radius: 2.25em;
-    background-color: var(--fundo-resposta);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em 0 0 0;
+  width: 80%;
+  background-color: var(--fundo-resposta);
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  padding: 2em 1em;
 }
 
 
 #respostaSemTexto{
-    width: 25em;
-    margin: 3.125em 0 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    flex-direction: column;
     background-color: var(--fundo-resposta);
 }
 
 .imagem-SemTexto{
-    padding: 40% 0 4% 0;
-    width: 20em;
-    background-color: var(--fundo-resposta);
+  display: none;
 }
 
 .mensagem-semTexto{
-    text-align: center;
-    font-weight: bold;
-    width: 18.75em;
-    line-height: 120%;
     background-color: var(--fundo-resposta);
+    text-align: center;
+    font-size: 24px;
+    font-weight: bolder;
 }
 
 .mensagem-semTexto-legenda{
-    text-align: center;
-    width: 18.75em;
-    font-size: 1em;
-    line-height: 150%;
     background-color: var(--fundo-resposta);
+    text-align: center;
+    font-size: 16px;
 }
 
 #box-textoResposta{
-   display: none;
-   width: 25em;
-   height: 49em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 0 0;
 }
 
 .textoResposta{
-    width: 100%;
-    height: 100%;
-    font-size: 1.5em;
+    width: 90%;
+    height: 20rem;
     outline: 0;
-    border: none;
     resize: none;
-    display: flex;
-    justify-content: start;
-    box-sizing: border-box;
-    pointer-events: none;
-    color: var(--cor-resposta);
-    background-color: var(--fundo-resposta);
+    border: none;
+    background-color: var(--fundo-body);
+    color: var(--texto-input);
+    font-size: 32px;
 }
 
 .box-botaoCopiar{
-  align-self: center;
-  background-color: var(--fundo-resposta);
+
 }
 
 #botao-copiar{
-    background-color: var(--fundo-resposta);  
-    border-color: #0A3871;
-    color: #0A3871;
+
 }
 
 .hide{
