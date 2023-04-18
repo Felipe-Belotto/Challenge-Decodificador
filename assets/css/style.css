@@ -90,18 +90,19 @@ main {
 }
 
 .botao{
-    width: 340px;
-    height: 60px;
     border-radius: 24px;
 }
 
 #botao-criptografar{
+    width: 340px;
+    height: 60px;
     background-color: var(--fundo-botaoCriptografar);
     color: var(--texto-botaoCriptografar);
 }
 
 #botao-descriptografar{
-  
+    width: 340px;
+    height: 60px;
 }
 
 .layout-resposta{
@@ -114,17 +115,18 @@ main {
 .box-resposta {
   width: 80%;
   background-color: var(--fundo-resposta);
-  padding: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   border-radius: 32px;
-  padding: 2em 1em;
+  padding: 0 1rem 1rem 1rem;
 }
 
 
 #respostaSemTexto{
     background-color: var(--fundo-resposta);
+    padding: 1em;
 }
 
 .imagem-SemTexto{
@@ -132,42 +134,44 @@ main {
 }
 
 .mensagem-semTexto{
-    background-color: var(--fundo-resposta);
+    background: none;
     text-align: center;
     font-size: 24px;
     font-weight: bolder;
 }
 
 .mensagem-semTexto-legenda{
-    background-color: var(--fundo-resposta);
+    background: none;
     text-align: center;
     font-size: 16px;
 }
 
 #box-textoResposta{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     margin: 2rem 0 0 0;
+    background: none;
 }
 
 .textoResposta{
-    width: 90%;
+    width: 100%;
     height: 20rem;
     outline: 0;
     resize: none;
     border: none;
-    background-color: var(--fundo-body);
+    background: none;
     color: var(--texto-input);
     font-size: 32px;
 }
 
 .box-botaoCopiar{
-
+    background: none;
 }
 
 #botao-copiar{
-
+    width: 280px;
+    height: 68px;
 }
 
 .hide{
