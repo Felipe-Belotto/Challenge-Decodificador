@@ -102,15 +102,15 @@ main {
 }
 
 #botao-criptografar{
-    width: 340px;
-    height: 60px;
+    width: 21.25rem;
+    height: 3.75rem;
     background-color: var(--fundo-botaoCriptografar);
     color: var(--texto-botaoCriptografar);
 }
 
 #botao-descriptografar{
-    width: 340px;
-    height: 60px;
+    width: 21.25rem;
+    height: 3.75rem;
     border: 1px var(--borda-botao) solid;
     color: var(--texto-botaoDescriptografar);
 }
@@ -180,8 +180,8 @@ main {
 }
 
 #botao-copiar{
-    width: 280px;
-    height: 68px;
+    width: 17.5rem;
+    height: 4.25rem;
     border: 1px var(--borda-botao) solid;
     color: var(--texto-botaoCopiar);
 }
