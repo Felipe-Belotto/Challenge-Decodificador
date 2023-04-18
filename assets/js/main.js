@@ -26,7 +26,6 @@
   
     const copiar = (valor) => {
       botaoCopiar.addEventListener("click", () => {navigator.clipboard.writeText(valor)});
-      window.scroll(0, document.documentElement.scrollHeight)
     };
 
     inputTexto.addEventListener("click", () => {
@@ -41,6 +40,7 @@
       for (let i = 0; i < algoritmo.length; i++) {
         textoCriptografado = textoCriptografado.replaceAll(algoritmo[i][0], algoritmo[i][1]);
       }
+      window.scroll(0, document.documentElement.scrollHeight)
       mostrarResultado(textoCriptografado);
       copiar(textoCriptografado)
     });
@@ -50,6 +50,7 @@
       for (let i = 0; i < algoritmo.length; i++) {
         textoDescriptografado = textoDescriptografado.replaceAll(algoritmo[i][1], algoritmo[i][0]);
       }
+      window.scroll(0, document.documentElement.scrollHeight)
       mostrarResultado(textoDescriptografado);
       copiar(textoDescriptografado)
     });
