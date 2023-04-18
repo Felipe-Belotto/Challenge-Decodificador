@@ -101,6 +101,10 @@ main {
     border-radius: 24px;
 }
 
+.botao:active {
+    transform: scale(0.99);
+}
+
 #botao-criptografar{
     width: 21.25rem;
     height: 3.75rem;

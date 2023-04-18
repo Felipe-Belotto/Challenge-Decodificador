@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+
     const botaoCriptografar = document.getElementById("botao-criptografar");
     const botaoDescriptografar = document.getElementById("botao-descriptografar");
     const botaoCopiar = document.getElementById("botao-copiar");
@@ -24,7 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   
     const copiar = (valor) => {
-      navigator.clipboard.writeText(valor);
+      botaoCopiar.addEventListener("click", () => {navigator.clipboard.writeText(valor)});
+      
     };
 
     inputTexto.addEventListener("click", () => {
@@ -40,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         textoCriptografado = textoCriptografado.replaceAll(algoritmo[i][0], algoritmo[i][1]);
       }
       mostrar(textoCriptografado);
-      copiar(textoCriptografado);
+      copiar(textoCriptografado)
     });
   
     botaoDescriptografar.addEventListener("click", () => {
@@ -49,7 +50,9 @@ document.addEventListener("DOMContentLoaded", () => {
         textoDescriptografado = textoDescriptografado.replaceAll(algoritmo[i][1], algoritmo[i][0]);
       }
       mostrar(textoDescriptografado);
-      copiar(textoDescriptografado);
+      copiar(textoDescriptografado)
     });
-  });
+
+   
+
   
