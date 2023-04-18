@@ -9,14 +9,38 @@
     const areaTextoResposta = document.getElementById("box-textoResposta")
   
     const algoritmo = [
+      /* Vogais */
       ["e", "enter"],
       ["i", "imes"],
       ["a", "ai"],
       ["o", "ober"],
       ["u", "ufat"],
+      /* Consoantes */
+      ["b", "xla"],
+      ["c", "xlb"],
+      ["d", "xlc"],
+      ["f", "xld"],
+      ["g", "xle"],
+      ["h", "xlf"],
+      ["j", "xlg"],
+      ["k", "xlh"],
+      ["l", "xli"],
+      ["m", "xlj"],
+      ["p", "xlk"],
+      ["q", "xll"],
+      ["r", "xlm"],
+      ["s", "xln"],
+      ["t", "xlo"],
+      ["v", "xlp"],
+      ["w", "xlq"],
+      ["x", "xlr"],
+      ["y", "xls"],
+      ["z", "xlt"],
+      ["ã", "ao"],
+      ["ç", "dilha"],
     ];
   
-    const mostrar = (texto) => {
+    const mostrarResultado = (texto) => {
       respostaSemTexto.style.display="none"
       botaoCopiar.style.display="block"
       areaTextoResposta.style.display="flex"
@@ -40,7 +64,7 @@
       for (let i = 0; i < algoritmo.length; i++) {
         textoCriptografado = textoCriptografado.replaceAll(algoritmo[i][0], algoritmo[i][1]);
       }
-      mostrar(textoCriptografado);
+      mostrarResultado(textoCriptografado);
       copiar(textoCriptografado)
     });
   
@@ -49,7 +73,7 @@
       for (let i = 0; i < algoritmo.length; i++) {
         textoDescriptografado = textoDescriptografado.replaceAll(algoritmo[i][1], algoritmo[i][0]);
       }
-      mostrar(textoDescriptografado);
+      mostrarResultado(textoDescriptografado);
       copiar(textoDescriptografado)
     });
 
