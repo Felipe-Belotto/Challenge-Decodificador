@@ -50,7 +50,7 @@ main {
 
 .layout-preencher{
     width: 100%;
-    height: 78%;
+    height: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
