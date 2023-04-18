@@ -30,7 +30,7 @@
         window.scroll(0,0);
         setTimeout(() => {
           location.reload()
-        }, 500);
+        }, 800);
       });
     };
 
