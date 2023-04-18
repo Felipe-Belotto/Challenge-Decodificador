@@ -5,11 +5,13 @@
     --texto-input: #0A3871;
     --texto-botaoCriptografar: #fff ;
     --texto-botaoDescriptografar: #0a3871;
+    --texto-botaoCopiar: #0a3871 ;
 
     --borda-botao: #0a3871 ;
 
     --fundo-botaoCriptografar: #0a3871;
     --fundo-botaoDescriptografar: #F3F5FCa ;
+    
 
     --cor-resposta:#495057;
 }
@@ -109,6 +111,8 @@ main {
 #botao-descriptografar{
     width: 340px;
     height: 60px;
+    border: 1px var(--borda-botao) solid;
+    color: var(--texto-botaoDescriptografar);
 }
 
 .layout-resposta{
@@ -178,6 +182,8 @@ main {
 #botao-copiar{
     width: 280px;
     height: 68px;
+    border: 1px var(--borda-botao) solid;
+    color: var(--texto-botaoCopiar);
 }
 
 .hide{
