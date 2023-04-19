@@ -322,6 +322,7 @@ footer{
     }
 
     main{
+        padding: 2rem 0 0 0;
         width: 70%;
         flex-direction: row;
     }
