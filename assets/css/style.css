@@ -333,7 +333,7 @@ footer{
     }
 
     .primeira-tela{
-        width: 50%;
+        width: 70%;
     }
 
     .segunda-tela{
@@ -366,7 +366,6 @@ footer{
 
     #input-texto{
         width: 95%;
-        
     }
 
     .layout-resposta{
@@ -375,7 +374,7 @@ footer{
     }
 
     .box-resposta{
-        width: 70%;
+        width: 80%;
         margin: 0;
         padding: 0;
         justify-content: center;
@@ -386,7 +385,7 @@ footer{
     }
 
     .mensagem-semTexto{
-        width: 80%;
+        width: 100%;
     }
 
     .imagem-SemTexto{
