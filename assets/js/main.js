@@ -7,6 +7,7 @@
     const textoResposta = document.getElementById("textoResposta");
     const respostaSemTexto = document.getElementById("respostaSemTexto");
     const areaTextoResposta = document.getElementById("box-textoResposta")
+    const boxTextoResposta = document.querySelector(".box-resposta")
   
     const algoritmo = [
       /* Vogais */
@@ -21,16 +22,24 @@
       respostaSemTexto.style.display="none"
       botaoCopiar.style.display="block"
       areaTextoResposta.style.display="flex"
+      boxTextoResposta.style.justifyContent="start"
+      
       textoResposta.value = texto;
     };
+
+    function retornaResultado(){
+      respostaSemTexto.style.display="flex"
+      botaoCopiar.style.display="none"
+      areaTextoResposta.style.display="none"
+      boxTextoResposta.style.justifyContent="center"
+    }
   
     const copiar = (valor) => {
       botaoCopiar.addEventListener("click", () => {
         navigator.clipboard.writeText(valor)
         window.scroll(0,0);
-        setTimeout(() => {
-          location.reload()
-        }, 800);
+        inputTexto.value = "Digite seu texto"
+        retornaResultado()
       });
     };
 
