@@ -164,6 +164,10 @@ main {
     justify-content: center;
 }
 
+.box-semTexto{
+    background: none;
+}
+
 .imagem-SemTexto{
   display: none;
 }
@@ -329,11 +333,16 @@ footer{
     }
 
     .primeira-tela{
-        width: 65%;
+        width: 50%;
     }
 
     .segunda-tela{
-        width: 35%;
+        width:35%;
+    }
+
+    .box-logoAlura {
+        width: 100%;
+        margin: 0;
     }
     
     .logoAlura{ 
@@ -344,7 +353,7 @@ footer{
      .layout-preencher{
         width: 80%;
         align-items: start;
-        padding: 0 0 0 6rem;
+        padding: 6rem 0 0 8rem;
      }
 
      #input-texto{
@@ -357,6 +366,7 @@ footer{
 
     #input-texto{
         width: 95%;
+        
     }
 
     .layout-resposta{
@@ -365,7 +375,7 @@ footer{
     }
 
     .box-resposta{
-        width: 85%;
+        width: 70%;
         margin: 0;
         padding: 0;
         justify-content: center;
@@ -376,7 +386,7 @@ footer{
     }
 
     .mensagem-semTexto{
-        width: 100%;
+        width: 80%;
     }
 
     .imagem-SemTexto{
@@ -386,7 +396,14 @@ footer{
         margin: 0 0 2em 0;
     }
 
+    #box-textoResposta{
+        width: 85%;
+        margin: 0;
+        padding: 2em 0 0 0;
+    }
+
     .textoResposta{
+        
         height: 75vh;
     }
 }
