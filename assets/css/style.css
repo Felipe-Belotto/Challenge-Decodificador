@@ -328,11 +328,11 @@ footer{
     }
 
     .primeira-tela{
-        width: 70%;
+        width: 65%;
     }
 
     .segunda-tela{
-        width: 30%;
+        width: 35%;
     }
     
     .logoAlura{ 
@@ -383,7 +383,7 @@ footer{
     }
 
     .textoResposta{
-        height: 75% ;
+        height: 75vh ;
     }
 }
 
