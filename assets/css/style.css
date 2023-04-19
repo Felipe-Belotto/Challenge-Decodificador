@@ -322,7 +322,6 @@ footer{
     }
 
     main{
-        padding: 0 0 2% 0;
         width: 70%;
         flex-direction: row;
     }
@@ -358,12 +357,16 @@ footer{
     }
 
     .box-resposta{
-        width: 65%;
+        width: 70%;
         justify-content: center;
     }
 
     #respostaSemTexto{
         width: 80%;
+    }
+
+    .mensagem-semTexto{
+        width: 100%;
     }
 
     .imagem-SemTexto{
