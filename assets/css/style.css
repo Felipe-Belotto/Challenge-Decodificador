@@ -324,6 +324,7 @@ footer{
     main{
         padding: 2rem 0 0 0;
         width: 70%;
+        height: 100%;
         flex-direction: row;
     }
 
@@ -360,10 +361,13 @@ footer{
 
     .layout-resposta{
         justify-content: start;
+        padding: 0;
     }
 
     .box-resposta{
         width: 85%;
+        margin: 0;
+        padding: 0;
         justify-content: center;
     }
 
@@ -383,7 +387,7 @@ footer{
     }
 
     .textoResposta{
-        height: 75vh ;
+        height: 75vh;
     }
 }
 
