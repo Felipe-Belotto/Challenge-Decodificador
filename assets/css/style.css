@@ -342,7 +342,11 @@ footer{
 
      .layout-preencher{
         align-items: start;
-        padding: 0 0 0 8em;
+        padding: 0;
+     }
+
+     #input-texto{
+        padding: 0;
      }
 
      .layout-botoes{
