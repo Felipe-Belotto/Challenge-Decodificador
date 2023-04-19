@@ -376,9 +376,9 @@ footer{
 
     .imagem-SemTexto{
         display: flex;
-        width: 100%;
+        width: 21rem;
         background: none;
-        margin: 2em;
+        margin: 0 0 2em 0;
     }
 
     .textoResposta{
