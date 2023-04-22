@@ -9,14 +9,7 @@
     const areaTextoResposta = document.getElementById("box-textoResposta")
     const boxTextoResposta = document.querySelector(".box-resposta")
   
-    const algoritmo = [
-      /* Vogais */
-      ["a", "ai"],
-      ["e", "enter"],
-      ["i", "imes"],
-      ["o", "ober"],
-      ["u", "ufat"],
-    ];
+    const algoritmo = [ ["e" , "enter"] , ["i" , "imes"] , ["a" , "ai"] , ["o", "ober"] , ["u", "ufat"]] ;
   
     const mostrarResultado = (texto) => {
       respostaSemTexto.style.display="none"
