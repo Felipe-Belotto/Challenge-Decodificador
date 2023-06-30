@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,9 @@
     <title>Decodificador</title>
 
     <link rel="stylesheet" href="assets/css/reset.css">
-    <style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');</style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
@@ -17,47 +20,48 @@
     <main>
         <section class="primeira-tela">
 
-        <div class="box-logoAlura">
-            <img src="assets/img/logoAlura.png" alt="Logo Alura" class="logoAlura">
+            <div class="box-logoAlura">
+                <img src="assets/img/logoAlura.png" alt="Logo Alura" class="logoAlura">
 
-        </div>
-        
-
-        <div class="layout-preencher">
-            <textarea name="TextoCodificador" id="input-texto">Digite seu texto</textarea>
-
-            <div class="layout-botoes">
-                <div class="box-informativo">
-                <img src="assets/img/iconeExclamacao.png" alt="icone de exclamação"><p class="informativo-input">Apenas letras minúsculas e sem acento.</p>
-                </div>
-                <div class="box-botoes">
-                <button id="botao-criptografar" class="botao" >Criptografar</button>
-                <button id="botao-descriptografar" class="botao">Descriptografar</button>
             </div>
-        </div>
-        </div>
-    </section>
+
+
+            <div class="layout-preencher">
+                <textarea name="TextoCodificador" id="input-texto">Digite seu texto</textarea>
+
+                <div class="layout-botoes">
+                    <div class="box-informativo">
+                        <img src="assets/img/iconeExclamacao.png" alt="icone de exclamação">
+                        <p class="informativo-input">Apenas letras minúsculas e sem acento.</p>
+                    </div>
+                    <div class="box-botoes">
+                        <button id="botao-criptografar" class="botao">Criptografar</button>
+                        <button id="botao-descriptografar" class="botao">Descriptografar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="segunda-tela">
             <div class="layout-resposta">
                 <div class="box-resposta">
-                <div id="respostaSemTexto">
-                <img src="assets/img/imgResposta.png" alt="ilustração para a caixa de resposta" class="imagem-SemTexto">
-                <br>
-                <p class="mensagem-semTexto">Nenhuma mensagem <br> encontrada</p> <br>
-                <p class="mensagem-semTexto-legenda">Digite um texto que você deseja <br> criptografar ou descriptografar.</p>
+                    <div id="respostaSemTexto">
+                        <img src="assets/img/imgResposta.png" alt="ilustração para a caixa de resposta" class="imagem-SemTexto">
+                        <br>
+                        <p class="mensagem-semTexto">Nenhuma mensagem <br> encontrada</p> <br>
+                        <p class="mensagem-semTexto-legenda">Digite um texto que você deseja <br> criptografar ou descriptografar.</p>
+                    </div>
+                    <div id="box-textoResposta"><textarea id="textoResposta" class="textoResposta" placeholder="testando"></textarea></div>
+                    <div class="box-botaoCopiar">
+                        <button class="botao hide" id="botao-copiar">Copiar</button>
+                    </div>
                 </div>
-            <div id="box-textoResposta"><textarea id="textoResposta" class="textoResposta" placeholder="testando"></textarea></div>
-        <div class="box-botaoCopiar">
-        <button class="botao hide" id="botao-copiar">Copiar</button>
-        </div>
-    </div>
-             </div>
+            </div>
 
         </section>
     </main>
-    <footer>Desenvolvido por <a href="https://www.linkedin.com/in/felipe-belotto-a34738185/"><img src="/assets/img/idPessoal.png" class="img-footer"></a></footer>
-   
+    <footer>Desenvolvido por <a href="https://www.linkedin.com/in/felipe-belotto-a34738185/" target="_blank"><img src="/assets/img/idPessoal.png" class="img-footer"></a></footer>
+
     <script src="assets/js/main.js"></script>
 </body>
 
