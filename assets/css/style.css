@@ -1,146 +1,144 @@
-:root{
-    --fundo-body:#F3F5FC ;
-    --fundo-resposta: #FFFFFF;
-   
-    --texto-input: #0A3871;
-    --texto-botaoCriptografar: #fff ;
-    --texto-botaoDescriptografar: #0a3871;
-    --texto-botaoCopiar: #0a3871 ;
+:root {
+  --fundo-body: #f3f5fc;
+  --fundo-resposta: #ffffff;
 
-    --borda-botao: #0a3871 ;
+  --texto-input: #0a3871;
+  --texto-botaoCriptografar: #fff;
+  --texto-botaoDescriptografar: #0a3871;
+  --texto-botaoCopiar: #0a3871;
 
-    --fundo-botaoCriptografar: #0a3871;
-    --fundo-botaoDescriptografar: #F3F5FCa ;
-    
+  --borda-botao: #0a3871;
 
-    --cor-resposta:#495057;
+  --fundo-botaoCriptografar: #0a3871;
+  --fundo-botaoDescriptografar: #F3F5FCa;
+
+  --cor-resposta: #495057;
 }
-html{
-    scroll-behavior: smooth;
-    -webkit-tap-highlight-color: transparent;
-}
-
-*{
-    background-color: var(--fundo-body);
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
 }
 
-body{
-    width: 100%;
-    height: 100%;
-    font-family: 'Inter', sans-serif;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--fundo-body);
+* {
+  background-color: var(--fundo-body);
 }
 
-main {   
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--fundo-body);
 }
 
-.box-logoAlura{
-   width: 100%;
-   margin: 0 0 10vh 0;
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.logoAlura{ 
-   width: 32px;
-   padding: 16px 0 0 16px;
+.box-logoAlura {
+  width: 100%;
+  margin: 0 0 10vh 0;
 }
 
-.primeira-tela{
-    width: 100%;
-    height: 90vh;
+.logoAlura {
+  width: 32px;
+  padding: 16px 0 0 16px;
 }
 
-.segunda-tela{
-    width: 100%;
-    height: 90vh;
-    display: flex;
+.primeira-tela {
+  width: 100%;
+  height: 90vh;
 }
 
-.layout-preencher{
-    width: 100%;
-    height: 75%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+.segunda-tela {
+  width: 100%;
+  height: 90vh;
+  display: flex;
 }
 
-#input-texto{
-   width: 85%;
-   height: 100%;
-   outline: 0;
-   resize: none;
-   border: none;
-   background-color: var(--fundo-body);
-   color: var(--texto-input);
-   font-size: 32px;
+.layout-preencher {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-
-.layout-botoes{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+#input-texto {
+  width: 85%;
+  height: 100%;
+  outline: 0;
+  resize: none;
+  border: none;
+  background-color: var(--fundo-body);
+  color: var(--texto-input);
+  font-size: 32px;
 }
 
-.box-informativo{
-    display: flex;
-    gap: 5px;
+.layout-botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.informativo-input{
-   font-size: 12px;
-   display: flex;
-   align-items: center;
+.box-informativo {
+  display: flex;
+  gap: 5px;
 }
 
-.box-botoes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 15px;
-    margin: 0 0 0.5em 0;
+.informativo-input {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
 }
 
-.botao{
-    border-radius: 24px;
+.box-botoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 0 0.5em 0;
 }
 
-.botao:hover{
-    cursor: pointer;
+.botao {
+  border-radius: 24px;
+}
+
+.botao:hover {
+  cursor: pointer;
 }
 
 .botao:active {
-    transform: scale(0.99);
+  transform: scale(0.99);
 }
 
-#botao-criptografar{
-    width: 21.25rem;
-    height: 3.75rem;
-    background-color: var(--fundo-botaoCriptografar);
-    color: var(--texto-botaoCriptografar);
+#botao-criptografar {
+  width: 21.25rem;
+  height: 3.75rem;
+  background-color: var(--fundo-botaoCriptografar);
+  color: var(--texto-botaoCriptografar);
 }
 
-#botao-descriptografar{
-    width: 21.25rem;
-    height: 3.75rem;
-    border: 1px var(--borda-botao) solid;
-    color: var(--texto-botaoDescriptografar);
+#botao-descriptografar {
+  width: 21.25rem;
+  height: 3.75rem;
+  border: 1px var(--borda-botao) solid;
+  color: var(--texto-botaoDescriptografar);
 }
 
-.layout-resposta{
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center  ;
-   padding: 0 0 3rem 0;
+.layout-resposta {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 3rem 0;
 }
 
 .box-resposta {
@@ -154,267 +152,258 @@ main {
   padding: 0 1rem 1rem 1rem;
 }
 
-
-#respostaSemTexto{
-    background: none;
-    padding: 1.5em 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+#respostaSemTexto {
+  background: none;
+  padding: 1.5em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.box-semTexto{
-    background: none;
+.box-semTexto {
+  background: none;
 }
 
-.imagem-SemTexto{
+.imagem-SemTexto {
   display: none;
 }
 
-.mensagem-semTexto{
-    background: none;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bolder;
+.mensagem-semTexto {
+  background: none;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bolder;
 }
 
-.mensagem-semTexto-legenda{
-    background: none;
-    text-align: center;
-    font-size: 16px;
+.mensagem-semTexto-legenda {
+  background: none;
+  text-align: center;
+  font-size: 16px;
 }
 
-#box-textoResposta{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    margin: 2rem 0 0 0;
-    background: none;
+#box-textoResposta {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0 0 0;
+  background: none;
 }
 
-.textoResposta{
-    width: 100%;
-    height: 20rem;
-    outline: 0;
-    resize: none;
-    border: none;
-    background: none;
-    color: var(--texto-input);
-    font-size: 32px;
+.textoResposta {
+  width: 100%;
+  height: 20rem;
+  outline: 0;
+  resize: none;
+  border: none;
+  background: none;
+  color: var(--texto-input);
+  font-size: 32px;
 }
 
-.box-botaoCopiar{
-    background: none;
+.box-botaoCopiar {
+  background: none;
 }
 
-#botao-copiar{
-    width: 17.5rem;
-    height: 4.25rem;
-    border: 1px var(--borda-botao) solid;
-    color: var(--texto-botaoCopiar);
+#botao-copiar {
+  width: 17.5rem;
+  height: 4.25rem;
+  border: 1px var(--borda-botao) solid;
+  color: var(--texto-botaoCopiar);
 }
 
-footer{
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 0 1px 0;
+footer {
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 1px 0;
 }
 
-.img-footer{
-    width: 100px;
-    padding: 0 0 0 5px;
+.img-footer {
+  width: 100px;
+  padding: 0 0 0 5px;
 }
 
-.img-footer:active{
-    transform: scale(0.95);
+.img-footer:active {
+  transform: scale(0.95);
 }
 
-.hide{
-    display: none;
+.hide {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
-
-    .box-botoes{
-        flex-direction: row;
-    }
-
+  .box-botoes {
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 1400px) {
-    body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    main{
-        padding: 1em;
-        width: 100%;
-        flex-direction: row;
-    }
+  main {
+    padding: 1em 0;
+    width: 100%;
+    flex-direction: row;
+  }
 
-    .primeira-tela{
-        width: 65%;
-    }
+  .primeira-tela {
+    width: 65%;
+  }
 
-    .segunda-tela{
-        width: 30%;
-    }
-    
-    .logoAlura{ 
-        width: 32px;
-        padding: 16px 32px 0 0;
-     }
+  .segunda-tela {
+    width: 30%;
+  }
 
-     .layout-preencher{
-        align-items: start;
-        padding: 0 0 0 8em;
-     }
+  .logoAlura {
+    width: 32px;
+    padding: 16px 32px 0 0;
+  }
 
-     .layout-botoes{
-        justify-content: start;
-     }
+  .layout-preencher {
+    align-items: start;
+    padding: 0 0 0 8em;
+  }
 
-    #input-texto{
-        width: 95%;
-    }
+  .layout-botoes {
+    justify-content: start;
+  }
 
-    .layout-resposta{
-        justify-content: start;
-    }
+  #input-texto {
+    width: 95%;
+  }
 
-    .box-resposta{
-        width: 100%;
-        height: 95%;
-        justify-content: center;
-    }
+  .layout-resposta {
+    justify-content: start;
+  }
 
-    #respostaSemTexto{
-        width: 80%;
-    }
+  .box-resposta {
+    width: 100%;
+    height: 95%;
+    justify-content: center;
+  }
 
-    .imagem-SemTexto{
-        display: flex;
-        width: 100%;
-        background: none;
-    }
-    
-    #respostaSemTexto{
+  #respostaSemTexto {
+    width: 80%;
+  }
+
+  .imagem-SemTexto {
+    display: flex;
+    width: 100%;
+    background: none;
+  }
+
+  #respostaSemTexto {
     background: none;
     padding: 1.5em 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+  }
 
- #box-textoResposta{
-        width: 85%;
-        margin: 0;
-    }
+  #box-textoResposta {
+    width: 85%;
+    margin: 0;
+  }
 
-
-    .textoResposta{
-        width: 100%;
-        height: 75vh ;
-        pointer-events: none;
-    }
+  .textoResposta {
+    width: 100%;
+    height: 75vh;
+    pointer-events: none;
+  }
 }
 
 @media screen and (min-width: 1850px) {
-    body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    main{
-        padding: 2rem 0 0 0;
-        width: 70%;
-        height: 100%;
-        flex-direction: row;
-    }
+  main {
+    padding: 2rem 0 0 0;
+    width: 70%;
+    height: 100%;
+    flex-direction: row;
+  }
 
-    .primeira-tela{
-        width: 70%;
-    }
+  .primeira-tela {
+    width: 70%;
+  }
 
-    .segunda-tela{
-        width:35%;
-    }
+  .segunda-tela {
+    width: 35%;
+  }
 
-    .box-logoAlura {
-        width: 100%;
-        margin: 0;
-    }
-    
-    .logoAlura{ 
-        width: 32px;
-        padding: 16px 32px 0 0;
-     }
+  .box-logoAlura {
+    width: 100%;
+    margin: 0;
+  }
 
-     .layout-preencher{
-        width: 80%;
-        align-items: start;
-        padding: 6rem 0 0 8rem;
-     }
+  .logoAlura {
+    width: 32px;
+    padding: 16px 32px 0 0;
+  }
 
-     #input-texto{
-        padding: 0;
-     }
+  .layout-preencher {
+    width: 80%;
+    align-items: start;
+    padding: 6rem 0 0 8rem;
+  }
 
-     .layout-botoes{
-        justify-content: start;
-     }
+  #input-texto {
+    padding: 0;
+  }
 
-    #input-texto{
-        width: 95%;
-    }
+  .layout-botoes {
+    justify-content: start;
+  }
 
-    .layout-resposta{
-        justify-content: start;
-        padding: 0;
-    }
+  #input-texto {
+    width: 95%;
+  }
 
-    .box-resposta{
-        width: 80%;
-        margin: 0;
-        padding: 0;
-        justify-content: center;
-    }
+  .layout-resposta {
+    justify-content: start;
+    padding: 0;
+  }
 
-    #respostaSemTexto{
-        width: 80%;
-    }
+  .box-resposta {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
 
-    .mensagem-semTexto{
-        width: 100%;
-    }
+  #respostaSemTexto {
+    width: 80%;
+  }
 
-    .imagem-SemTexto{
-        display: flex;
-        width: 21rem;
-        background: none;
-        margin: 0 0 2em 0;
-    }
+  .mensagem-semTexto {
+    width: 100%;
+  }
 
-    #box-textoResposta{
-        width: 85%;
-        margin: 0;
-        padding: 2em 0 0 0;
-    }
+  .imagem-SemTexto {
+    display: flex;
+    width: 21rem;
+    background: none;
+    margin: 0 0 2em 0;
+  }
 
-    .textoResposta{
-        
-        height: 72vh;
-    }
+  #box-textoResposta {
+    width: 85%;
+    margin: 0;
+    padding: 2em 0 0 0;
+  }
+
+  .textoResposta {
+    height: 72vh;
+  }
 }
-
-
-
-  
