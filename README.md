@@ -1,6 +1,6 @@
 # Decodificador de Mensagens
 
-[![Visite o site](https://a.imagem.app/ohOguQ.png)](https://challenge-decodificador-tau.vercel.app/)
+[![Visite o site](https://imagem.app/image/ohOvN1)](https://challenge-decodificador-tau.vercel.app/)
 
 ## Descrição
 
